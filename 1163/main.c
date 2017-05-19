@@ -1,25 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#define MAXSIZE 10000
 
 int digitalRoot( int poly, int base, int power );
 int digital( int num);
+int isEven( int num );
 
 int main() {
 
-    int test, poly, base, power;
+    int instance, poly, base, power;
 
-    while( scanf("%d",&test) != EOF )
+    while( scanf("%d",&instance) != EOF )
     {
-        if( test == 0)
+        if( instance == 0)
             break;
-        poly = digital(test);
-        base = poly;
-        power = test;
-        printf("%d\n",digitalRoot( poly, base, power-1 ) );
+        poly = 1;
+        base = instance;
+        power = instance;
+        printf("%d\n",digitalRoot( poly, base, power ) );
     }
-
     return 0;
 }
 
@@ -46,25 +43,27 @@ int digital( int num )
 }
 int digitalRoot( int poly, int base, int power )
 {
-
+    poly = digital( poly );
+    base = digital( base );
     while( power > 0 )
     {
-        if( poly < 10 )
+        if( isEven( power ))
         {
-            poly = poly * base;
-            power--;
+            base *= base;
+            power /= 2;
         }
         else
         {
-            poly = digital( poly );
+            poly *= base;
+            power--;
         }
-        if( base >= 10 )
-        {
-            base = digital( base );
-        }
-
-        digitalRoot( poly, base, power );
+       return digitalRoot( poly, base, power );
     }
     poly = digital( poly );
     return poly;
+}
+
+int isEven( int num )
+{
+    return num%2 == 0;
 }
