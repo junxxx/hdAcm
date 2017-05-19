@@ -1,0 +1,3 @@
+/cygdrive/f/workspace/C/hdAcm/1163/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/f/workspace/C/hdAcm/1163/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/f/workspace/C/hdAcm/1163/cmake-build-debug/CMakeFiles/1163.dir
