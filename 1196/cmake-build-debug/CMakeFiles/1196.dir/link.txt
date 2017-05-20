@@ -1,0 +1,1 @@
+/usr/bin/cc  -g  -Wl,--enable-auto-import CMakeFiles/1196.dir/main.c.o  -o 1196.exe -Wl,--out-implib,lib1196.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
