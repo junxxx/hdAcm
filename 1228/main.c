@@ -12,7 +12,7 @@ int ctoD( char X);
 int strtoNum( char[] );
 
 int main() {
-    char str[10];
+    char str[1001];
     int number;
 
     while( gets(str) )
