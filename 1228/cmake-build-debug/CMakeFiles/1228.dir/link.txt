@@ -1,0 +1,1 @@
+/usr/bin/cc  -g  -Wl,--enable-auto-import CMakeFiles/1228.dir/main.c.o  -o 1228.exe -Wl,--out-implib,lib1228.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
