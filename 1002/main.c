@@ -1,10 +1,4 @@
 #include <stdio.h>
-<<<<<<< HEAD
-
-int main() {
-    printf("Hello, World!\n");
-    return 0;
-=======
 #include <string.h>
 #define MAXSIZE 1001
 
@@ -62,5 +56,4 @@ int ctoD( char X )
 {
     if( X >= '0' && X <= '9')
         return X - 48;
->>>>>>> e9fb9f33201f955753ea3eb046af7ee4ae0aa5c9
 }
